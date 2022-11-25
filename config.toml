@@ -1,0 +1,135 @@
+baseURL = "http://example.org/"
+# [en, zh-cn, fr, ...] determines default content language
+defaultContentLanguage = "en"
+# language code
+languageCode = "en"
+title = "My New Hugo Site"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "uBlogger"
+
+[params]
+    # uBlogger theme version
+    version = "2.0.X"
+    # site default theme ("light", "dark", "auto")
+    # defaultTheme = "auto"
+    # public git repo url only then enableGitInfo is true
+    # gitRepo = "https://github.com/upagge/dolboblog-theme"
+    # which hash function used for SRI, when empty, no SRI is used ("sha256", "sha384", "sha512", "md5")
+    fingerprint = ""
+    # date format
+    dateFormat = "02-01-2006"
+    # website images for Open Graph and Twitter Cards
+    # images = ["/logo.webp"]
+    # site description
+    description = "About uBlogger Theme"
+    # site keywords
+    keywords = ["Theme", "Hugo"]
+      # Search config
+    #   [params.search]
+    #     enable = true
+    #     # type of search engine ("lunr", "algolia")
+    #     type = "algolia"
+    #     # max index length of the chunked content
+    #     contentLength = 4000
+    #     # placeholder of the search bar
+    #     placeholder = ""
+    #     # max number of results length
+    #     maxResultLength = 10
+    #     # snippet length of the result
+    #     snippetLength = 30
+    #     # HTML tag name of the highlight part in results
+    #     highlightTag = "em"
+    #     # whether to use the absolute URL based on the baseURL in search index
+    #     absoluteURL = false
+    #     [languages.en.params.search.algolia]
+    #       index = "index.en"
+    #       appID = "PASDMWALPK"
+    #       searchKey = "b42948e51daaa93df92381c8e2ac0f93"
+      # Home page config
+      [params.home]
+        # amount of RSS pages
+        rss = 10
+        # Home page profile
+        [params.home.profile]
+          enable = true
+          # Gravatar Email for preferred avatar in home page
+          gravatarEmail = ""
+          # URL of avatar shown in home page
+          avatarURL = "" #"/images/avatar.webp"
+          # title shown in home page (HTML format is supported)
+          title = "uBlogger | Hugo Theme"
+          # subtitle shown in home page (HTML format is supported)
+          subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+          # whether to show social links
+          social = true
+          # disclaimer (HTML format is supported)
+          disclaimer = ""
+        # Home page posts
+        [params.home.posts]
+          enable = true
+          # special amount of posts in each home posts page
+          paginate = 6
+      # Social config in home page
+      # There is a lot more available! Check out the example site config.
+      [params.social]
+        GitHub = ""
+        Linkedin = ""
+        RSS = true
+    # Header config
+      [params.header]
+        # desktop header mode ("fixed", "normal", "auto")
+        # desktopMode = "fixed"
+        # mobile header mode ("fixed", "normal", "auto")
+        # mobileMode = "auto"
+        # Header title config
+        # [params.header.title]
+            # URL of the LOGO
+            # logo = ""
+            # title name
+            # name = "uBlogger"
+            # you can add extra information before the name (HTML format is supported), such as icons
+            # pre = "<i class='fas fa-pencil-alt fa-fw'></i>"
+            # you can add extra information after the name (HTML format is supported), such as icons
+            # post = ""
+        # Footer config
+        [params.footer]
+            enable = true
+            # Custom content (HTML format is supported)
+            custom = ''
+            # whether to show Hugo and theme info
+            hugo = true
+            # whether to show copyright info
+            copyright = true
+            # whether to show the author
+            # 是否显示作者
+            author = true
+            # site creation time
+            since = 2021
+            # ICP info only in China (HTML format is supported)
+            # icp = ""
+            # license info (HTML format is supported)
+            license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+        # Section (all posts) page config
+        [params.section]
+            # special amount of posts in each section page
+            paginate = 20
+            # date format (month and day)
+            dateFormat = "02-01"
+            # amount of RSS pages
+            rss = 10
+        # List (category or tag) page config
+        [params.list]
+            # special amount of posts in each list page
+            paginate = 20
+            # date format (month and day)
+            dateFormat = "02-01"
+            # amount of RSS pages
+            rss = 10
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration
+    noClasses = false
