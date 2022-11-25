@@ -1,9 +1,9 @@
-baseURL = "http://example.org/"
+baseURL = "http://projectPepga.github.io/"
 # [en, zh-cn, fr, ...] determines default content language
 defaultContentLanguage = "en"
 # language code
 languageCode = "en"
-title = "My New Hugo Site"
+title = "WELCOME TO CUMTOWN!!"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "uBlogger"
@@ -73,8 +73,9 @@ theme = "uBlogger"
       # Social config in home page
       # There is a lot more available! Check out the example site config.
       [params.social]
-        GitHub = ""
-        Linkedin = ""
+        GitHub = "https://github.com/projectPepga"
+        Twitter = "https://twitter.com/WalsheSway"
+		Linkedin = ""
         RSS = true
     # Header config
       [params.header]
